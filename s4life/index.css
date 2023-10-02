@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header */
+header {
+    padding: 10px 0 0 0;
+    background-color: rgb(254, 254, 143);
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header>.interface .logo img{
+    width: 7vw;
+    height: auto;
+}
+
+header>.interface a {
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+header>.interface nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header>.interface nav ul li{
+    padding: 0 15px 0 0;
+}
+
+/* Sobre nós */
+.nos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+
+.nos h2 {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Produtos */
+.produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+
+.produtos h2 {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Perguntas */
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+
+.faq h2 {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Contatos */
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.contato h2{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+}
+
+
+footer .line-footer {
+    padding: 25px 0 0 0;
+}
+
+.btn-social button {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+footer .line-footer p {
+    text-align: center;
+    font-size: 22px;
+}
+
+footer .line-footer p i {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: rgb(0, 0, 0);
+}
