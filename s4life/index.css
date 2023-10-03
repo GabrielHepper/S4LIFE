@@ -68,32 +68,63 @@ header nav ul li{
 .nos {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 70px;
+    justify-content: space-between;
+    padding: 150px;
 }
 
+.nos .interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    animation: changeBackground 15s infinite linear;
+    width: 40vw;
+    height: 60vh;
+    padding: 0 100px;
+    position: relative;
+    background-size: cover;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('../s4life/IMG/apartamento1.jpg');
+    }
+    16.06% {
+        background-image: url('../s4life/IMG/apartamento2.jpg');
+    }
+    33.02%{
+        background-image: url('../s4life/IMG/apartamento3.jpg');
+    }
+    49.08% {
+        background-image: url('../s4life/IMG/apartamento4.jpg');
+    }
+    66.04% {
+        background-image: url('../s4life/IMG/apartamento5.jpg'); 
+    }
+    83% {
+        background-image: url('../s4life/IMG/apartamento3.jpg'); 
+    }
+    100% {
+        background-image: url('../s4life/IMG/apartamento1.jpg'); 
+    }
+}
 
 .nos p {
-    color: rgb(0, 0, 0);
-    font-size:large;
+    color: white;
+    font-size: larger;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 /* Produtos */
 .produtos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 70px;
 }
 
-
-.produtos h2 {
-    color: rgb(0, 0, 0);
-    font-size: 35px;
-    text-align: center;
-}
 
 /* Perguntas */
 .faq {
