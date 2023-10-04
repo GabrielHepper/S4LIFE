@@ -43,7 +43,7 @@
     top: 100%;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 4px;
     background: rgb(221, 181, 0);
     transition: .2s;
 }
@@ -161,30 +161,64 @@ footer {
     color: white;
 }
 
-#footer_content {
+.footer_link {
+    text-decoration: none;
+}
+
+#conteudo {
     background-color: black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer_contacts h1 {
+#contato h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer_social_media {
+#social {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-#footer_social_media .footer_link {
+#social .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
     color: white;
-    border-radius: 50%;
 }
 
-#facebook {
-    background-color: white;
+#social .link i {
+    font-size: 1.80rem;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.lista h3 {
+    letter-spacing: 1px;
+}
+
+.lista a {
+    color: white;
+    text-decoration: none;
+}
+
+#resumo span {
+    color: rgb(221, 181, 0);
+}
+
+#direito {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
