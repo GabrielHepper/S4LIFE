@@ -127,18 +127,64 @@ header nav ul li{
 
 
 /* Perguntas */
-.faq {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 70px;
+section.faq {
+    padding: 50px 4%;
 }
 
-
-.faq h2 {
-    color: rgb(0, 0, 0);
-    font-size: 35px;
+section.faq h2 {
     text-align: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+section.faq p {
+    text-align: center;
+    align-items: center;
+}
+
+section.faq h2 span {
+    color: rgb(221, 181, 0);
+}
+
+section.faq .flex {
+    gap: 30px;
+    display: flex;
+}
+
+.faq .duvidas {
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(154, 154, 154);
+    margin-top: 45px;
+}
+
+.faq .duvidas:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.faq .duvidas i {
+    font-size: 70px;
+}
+
+.faq .duvidas h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.faq .duvidas p {
+    text-align: left;
+}
+
+.faq .duvidas h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.faq .duvidas .ling {
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 /* Contatos */
@@ -206,7 +252,7 @@ footer {
 }
 
 .lista a {
-    color: white;
+    color: rgb(102, 102, 102);
     text-decoration: none;
 }
 
