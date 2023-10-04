@@ -157,37 +157,34 @@ header nav ul li{
 
 /* Footer */
 footer {
+    width: 100%;
+    color: white;
+}
+
+#footer_content {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
     display: flex;
-    justify-content: center;
-    padding: 30px 0 50px 0;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
 
-
-footer .line-footer {
-    padding: 25px 0 0 0;
-}
-
-.btn-social button {
-    width: 60px;
-    height: auto;
+#footer_social_media .footer_link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
     border-radius: 50%;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
 }
 
-footer .line-footer p {
-    text-align: center;
-    font-size: 22px;
-}
-
-footer .line-footer p i {
-    color: rgb(0, 0, 0);
-    font-size: 22px;
-}
-
-footer .line-footer p a {
-    color: rgb(0, 0, 0);
+#facebook {
+    background-color: white;
 }
