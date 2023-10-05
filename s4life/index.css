@@ -68,22 +68,44 @@ header nav ul li{
 .nos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 150px;
+    justify-content: space-around;
+    animation: changeBackground 30s infinite linear;
+    background-size: cover;
+    height: 75vh;
+}
+
+.nos .overlay{
+    width: 100vw;
+    height: 75vh;
+    background-color: gray;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.nos .logo{
+    width: 20vw;
+    height: auto;
+    margin-top: 70px;
+    z-index: 1;
 }
 
 .nos .interface{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15%;
-    animation: changeBackground 15s infinite linear;
-    width: 40vw;
+    width: 20vw;
     height: 60vh;
-    padding: 0 100px;
-    position: relative;
-    background-size: cover;
+    margin: 90px 50px 30px 0;
+    z-index: 1;
 }
+
+.nos p {
+    color: yellow;
+    font-size:xx-large;
+    text-align: left;
+    font-family: 'Amatic SC', cursive;
+}
+
 
 @keyframes changeBackground {
     0% {
@@ -109,22 +131,34 @@ header nav ul li{
     }
 }
 
-.nos p {
-    color: white;
-    font-size: larger;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-}
 
 /* Produtos */
 .produtos {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 70px;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    padding: 50px 20px 0 20px; 
 }
 
+.vitrine{
+    width: 20vw;
+    max-height: 40vh;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10% 10% 0 0;
+    margin: 0 0 40px 0;
+}
+
+.vitrine img{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.vitrine p{
+    text-overflow: ellipsis;
+}
 
 /* Perguntas */
 section.faq {
