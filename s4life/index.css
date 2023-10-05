@@ -7,7 +7,6 @@
 
 /* Header */
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -19,13 +18,15 @@
 }
 
 .logo {
-    font-size: 45px;
-    text-decoration: none;
-    color: rgb(27, 27, 27);
-    font-weight: 900;
+    width: 100px;
+    height: 100px;
 }
 
-.logo span {
+#primeira {
+    color: rgb(255, 88, 88);
+}
+
+#segunda {
     color: rgb(221, 181, 0);
 }
 
@@ -65,72 +66,33 @@ header nav ul li{
 
 
 /* Sobre nós */
-.nos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    animation: changeBackground 30s infinite linear;
+.banner {
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)), url(IMG/apartamento4.jpg);
     background-size: cover;
-    height: 75vh;
+    background-position: center;
 }
 
-.nos .overlay{
-    width: 100vw;
-    height: 75vh;
-    background-color: gray;
+.content {
+    width: 100%;
     position: absolute;
-    opacity: 0.4;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
 }
 
-.nos .logo{
-    width: 20vw;
-    height: auto;
-    margin-top: 70px;
-    z-index: 1;
+.content h1 {
+    font-size: 80px;
+    margin-top: 80px;
 }
 
-.nos .interface{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 60vh;
-    margin: 90px 50px 30px 0;
-    z-index: 1;
+.content p {
+    margin: 20px auto;
+    font-weight: 600;
+    line-height: 20px;
 }
-
-.nos p {
-    color: yellow;
-    font-size:xx-large;
-    text-align: left;
-    font-family: 'Amatic SC', cursive;
-}
-
-
-@keyframes changeBackground {
-    0% {
-        background-image: url('../s4life/IMG/apartamento1.jpg');
-    }
-    16.06% {
-        background-image: url('../s4life/IMG/apartamento2.jpg');
-    }
-    33.02%{
-        background-image: url('../s4life/IMG/apartamento3.jpg');
-    }
-    49.08% {
-        background-image: url('../s4life/IMG/apartamento4.jpg');
-    }
-    66.04% {
-        background-image: url('../s4life/IMG/apartamento5.jpg'); 
-    }
-    83% {
-        background-image: url('../s4life/IMG/apartamento3.jpg'); 
-    }
-    100% {
-        background-image: url('../s4life/IMG/apartamento1.jpg'); 
-    }
-}
-
 
 /* Produtos */
 .produtos {
@@ -181,21 +143,16 @@ section.faq h2 span {
 }
 
 section.faq .flex {
-    gap: 30px;
+    gap: 10px;
     display: flex;
 }
 
 .faq .duvidas {
     color: rgb(0, 0, 0);
-    padding: 30px;
+    padding: 40px;
     border-radius: 25px;
     border: 1px solid rgb(154, 154, 154);
     margin-top: 45px;
-}
-
-.faq .duvidas:hover {
-    transform: scale(1.05);
-    transition: .2s;
 }
 
 .faq .duvidas i {
@@ -216,9 +173,30 @@ section.faq .flex {
     color: black;
 }
 
-.faq .duvidas .ling {
-    margin-top: 25px;
-    font-size: 20px;
+.faq .ask {
+    color: yellow;
+}
+
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:rgb(255, 88, 88);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.contato button:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.contato button p {
+    color: white;
+    text-decoration: none;
 }
 
 /* Contatos */
@@ -288,10 +266,6 @@ footer {
 .lista a {
     color: rgb(102, 102, 102);
     text-decoration: none;
-}
-
-#resumo span {
-    color: rgb(221, 181, 0);
 }
 
 #direito {
