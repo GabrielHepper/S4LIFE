@@ -1,278 +1,590 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@media screen and (min-device-width: 1280px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Header */
+    .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #primeira {
+        color: rgb(255, 88, 88);
+    }
+
+    #segunda {
+        color: rgb(221, 181, 0);
+    }
+
+    .menu a {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(27, 27, 27);
+        text-decoration: none;
+    }
+
+    .menu a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: rgb(221, 181, 0);
+        transition: .2s;
+    }
+
+    .menu a:hover::before {
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    header nav ul li {
+        padding: 0 120px 0 0;
+    }
+
+
+    /* Sobre nós */
+    .banner {
+        width: 100%;
+        height: 81vh;
+        background-image: linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)), url(IMG/apartamento4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 80px;
+        margin-top: 80px;
+    }
+
+    .content p {
+        margin: 20px auto;
+        font-weight: 600;
+        line-height: 20px;
+        width: 40vw;
+        text-align: justify;
+    }
+
+    /* Produtos */
+    .produtos {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 50px 20px 0 20px;
+    }
+
+
+    .textop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
+
+    .textop h2{
+        font-size: 60px;
+    }
+
+    .textop p{
+        font-size: 20px;
+    }
+
+    .textop h2 span {
+        color: rgb(221, 181, 0);
+    }
+
+    .vitrine {
+        width: 20vw;
+        max-height: 40vh;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px black;
+        border-radius: 10px;
+        margin: 0 0 40px 0;
+        padding: 10px;
+    }
+
+    .vitrine img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .vitrine p {
+        text-overflow: ellipsis;
+    }
+
+    .vitrine p span{
+        font-weight: bolder;
+    }
+
+    /* Perguntas */
+    section.faq {
+        padding: 50px 4%;
+    }
+
+    section.faq h2 {
+        text-align: center;
+        align-items: center;
+        font-size: 60px;
+    }
+
+    section.faq p {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    section.faq h2 span {
+        color: rgb(221, 181, 0);
+    }
+
+    section.faq .flex {
+        gap: 10px;
+        display: flex;
+    }
+
+    .faq .duvidas {
+        color: rgb(0, 0, 0);
+        padding: 40px;
+        border-radius: 25px;
+        border: 1px solid rgb(154, 154, 154);
+        margin-top: 45px;
+    }
+
+    .faq .duvidas i {
+        font-size: 70px;
+    }
+
+    .faq .duvidas h3 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .faq .duvidas p {
+        text-align: left;
+    }
+
+    .faq .duvidas h3 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .faq .ask {
+        color: yellow;
+    }
+
+    .contato button {
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(255, 88, 88);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato .faca{
+        text-decoration: none;
+    }
+
+    .contato button:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .contato button p {
+        color: white; 
+    }
+
+    /* Contatos */
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 70px;
+    }
+
+    .contato h2 {
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        color: white;
+    }
+
+    .footer_link {
+        text-decoration: none;
+    }
+
+    #conteudo {
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 3rem 3.5rem;
+    }
+
+    #contato h1 {
+        margin-bottom: 0.75rem;
+    }
+
+    #social {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    #social .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: white;
+    }
+
+    #social .link i {
+        font-size: 1.80rem;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+    }
+
+    .lista h3 {
+        letter-spacing: 1px;
+    }
+
+    .lista a {
+        color: rgb(102, 102, 102);
+        text-decoration: none;
+    }
+
+    #direito {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        font-size: 0.9rem;
+        padding: 1.5rem;
+        font-weight: 100;
+    }
+
 }
 
-/* Header */
-.header{
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
-#primeira {
-    color: rgb(255, 88, 88);
-}
-
-#segunda {
-    color: rgb(221, 181, 0);
-}
-
-.menu a{
-    position: relative;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgb(27, 27, 27);
-    text-decoration: none;
-}
-
-.menu a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background: rgb(221, 181, 0);
-    transition: .2s;
-}
-
-.menu a:hover::before {
-    width: 100%;
-}
-
-header nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-}
-
-header nav ul li{
-    padding: 0 120px 0 0;
-}
 
 
-/* Sobre nós */
-.banner {
-    width: 100%;
-    height: 75vh;
-    background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)), url(IMG/apartamento4.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
 
-.content h1 {
-    font-size: 80px;
-    margin-top: 80px;
-}
 
-.content p {
-    margin: 20px auto;
-    font-weight: 600;
-    line-height: 20px;
-}
 
-/* Produtos */
-.produtos {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap; 
-    padding: 50px 20px 0 20px; 
-}
+@media screen and (min-device-width: 414px) and (max-device-width: 414px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.vitrine{
-    width: 20vw;
-    max-height: 40vh;
-    overflow: hidden;
-    box-shadow: 3px 3px 5px black;
-    border-radius: 10% 10% 0 0;
-    margin: 0 0 40px 0;
-}
+    /* Header */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        background-color: white;
+    }
 
-.vitrine img{
-    width: 100%;
-    height: 65%;
-    object-fit: cover;
-}
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 
-.vitrine p{
-    text-overflow: ellipsis;
-}
+    #primeira {
+        color: rgb(255, 88, 88);
+    }
 
-/* Perguntas */
-section.faq {
-    padding: 50px 4%;
-}
+    #segunda {
+        color: rgb(221, 181, 0);
+    }
 
-section.faq h2 {
-    text-align: center;
-    align-items: center;
-    font-size: 50px;
-}
+    .menu {
+        display: none;
+    }
 
-section.faq p {
-    text-align: center;
-    align-items: center;
-}
+    /* Sobre nós */
+    .banner {
+        width: 100%;
+        height: 65vh;
+        background-image: linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)), url(IMG/apartamento4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
-section.faq h2 span {
-    color: rgb(221, 181, 0);
-}
+    .excluir {
+        display: none;
+    }
 
-section.faq .flex {
-    gap: 10px;
-    display: flex;
-}
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        text-align: center;
+        color: #fff;
+    }
 
-.faq .duvidas {
-    color: rgb(0, 0, 0);
-    padding: 40px;
-    border-radius: 25px;
-    border: 1px solid rgb(154, 154, 154);
-    margin-top: 45px;
-}
+    .content h1 {
+        font-size: 35px;
+        font-weight: 800;
+        margin-top: 80px;
+    }
 
-.faq .duvidas i {
-    font-size: 70px;
-}
+    .content p {
+        margin: 20px auto;
+        margin-left: 25%;
+        font-weight: 400;
+        line-height: 20px;
+        width: 60vw;
+        text-align: left;
+    }
 
-.faq .duvidas h3 {
-    font-size: 20px;
-    margin: 15px 0;
-}
+    /* Produtos */
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 20px;
+        margin-left: 35px;
+    }
 
-.faq .duvidas p {
-    text-align: left;
-}
+    .textop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
 
-.faq .duvidas h3 a {
-    text-decoration: none;
-    color: black;
-}
+    .textop h2{
+        font-size: 30px;
+    }
 
-.faq .ask {
-    color: yellow;
-}
+    .textop p{
+        font-size: 14px;
+    }
 
-.contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color:rgb(255, 88, 88);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-}
+    .textop h2 span {
+        color: rgb(221, 181, 0);
+    }
 
-.contato button:hover {
-    transform: scale(1.05);
-    transition: .3s;
-}
+    .vitrine {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
 
-.contato button p {
-    color: white;
-    text-decoration: none;
-}
+    .vitrine img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 
-/* Contatos */
-.contato{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 70px;
-}
+    .vitrine p {
+        text-overflow: ellipsis;
+        margin-top: 10px;
+    }
 
-.contato h2{
-    color: rgb(0, 0, 0);
-    font-size: 35px;
-    text-align: center;
-}
 
-/* Footer */
-footer {
-    width: 100%;
-    color: white;
-}
+    /* Perguntas */
+    section.faq {
+        padding: 20px;
+        text-align: center;
+    }
 
-.footer_link {
-    text-decoration: none;
-}
+    section.faq h2 {
+        font-size: 30px;
+    }
 
-#conteudo {
-    background-color: black;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
-}
+    section.faq p {
+        font-size: 14px;
+    }
 
-#contato h1 {
-    margin-bottom: 0.75rem;
-}
+    section.faq h2 span {
+        color: rgb(221, 181, 0);
+    }
 
-#social {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
+    .faq .duvidas {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-#social .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: white;
-}
+    .faq .duvidas i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: rgb(221, 181, 0);
+    }
 
-#social .link i {
-    font-size: 1.80rem;
-}
+    .faq .duvidas h3 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
 
-.lista {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-}
-.lista h3 {
-    letter-spacing: 1px;
-}
+    .faq .duvidas p {
+        text-align: left;
+    }
 
-.lista a {
-    color: rgb(102, 102, 102);
-    text-decoration: none;
-}
+    .contato button {
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(255, 88, 88);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
 
-#direito {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
+    .contato .faca{
+        text-decoration: none;
+    }
+
+    .contato button:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .contato button p {
+        color: white; 
+    }
+
+    /* Footer */
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contato h2 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        color: white;
+        padding: 20px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .footer_link {
+        text-decoration: none;
+        color: white;
+    }
+
+    #social {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #social .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: white;
+    }
+
+    #social .link i {
+        font-size: 1.80rem;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .lista a {
+        color: rgb(102, 102, 102);
+        text-decoration: none;
+    }
+
+    #resumo p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
 }
