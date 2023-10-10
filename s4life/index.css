@@ -117,11 +117,11 @@
         margin-bottom: 5vh;
     }
 
-    .textop h2{
+    .textop h2 {
         font-size: 60px;
     }
 
-    .textop p{
+    .textop p {
         font-size: 20px;
     }
 
@@ -131,9 +131,9 @@
 
     .vitrine {
         width: 20vw;
-        max-height: 40vh;
+        max-height: 30vh;
         overflow: hidden;
-        box-shadow: 1px 1px 2px black;
+        border: 1px solid rgb(154, 154, 154);
         border-radius: 10px;
         margin: 0 0 40px 0;
         padding: 10px;
@@ -149,13 +149,53 @@
         text-overflow: ellipsis;
     }
 
-    .vitrine p span{
+    .vitrine p span {
         font-weight: bolder;
+    }
+
+    /* Categoria */
+    section.categoria {
+        padding: 60px 7%;
+        padding-bottom: 120px;
+    }
+
+    section.categoria h2 {
+        align-items: center;
+        font-size: 35px;
+    }
+
+    section.categoria p {
+        align-items: center;
+        font-size: 15px;
+    }
+
+    section.categoria .flex {
+        gap: 8px;
+        display: flex;
+    }
+
+    .opcoes img {
+        min-width: 100%; 
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .categoria .opcoes {
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        margin-top: 45px;
+    }
+
+    .categoria .opcoes h3 {
+        font-size: 20px;
     }
 
     /* Perguntas */
     section.faq {
-        padding: 50px 4%;
+        padding: 50px 10%;
     }
 
     section.faq h2 {
@@ -221,7 +261,7 @@
         justify-content: center;
     }
 
-    .contato .faca{
+    .contato .faca {
         text-decoration: none;
     }
 
@@ -231,7 +271,7 @@
     }
 
     .contato button p {
-        color: white; 
+        color: white;
     }
 
     /* Contatos */
@@ -405,6 +445,7 @@
         align-items: stretch;
         padding: 20px;
         margin-left: 35px;
+        text-align: center;
     }
 
     .textop {
@@ -417,11 +458,12 @@
         margin-bottom: 5vh;
     }
 
-    .textop h2{
+    .textop h2 {
         font-size: 30px;
+        text-align: center;
     }
 
-    .textop p{
+    .textop p {
         font-size: 14px;
     }
 
@@ -449,7 +491,40 @@
         margin-top: 10px;
     }
 
+    /* Categoria */
+    section.categoria {
+        padding: 20px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
 
+    section.categoria h2 {
+        align-items: center;
+        font-size: 30px;
+    }
+    .opcoes {
+        display: inline-flex;
+    }
+    .opcoes img {
+        width: 140px;
+        height: 130px;
+        margin: 10px 0;
+        padding: 10px;
+        object-fit: cover;
+        border-radius: 15px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .opcoes h3 {
+        font-size: 16px;
+    }
+
+    .opcoes p {
+        font-size: 12px;
+        display: inline;
+    }
+    
     /* Perguntas */
     section.faq {
         padding: 20px;
@@ -506,7 +581,7 @@
         justify-content: center;
     }
 
-    .contato .faca{
+    .contato .faca {
         text-decoration: none;
     }
 
@@ -516,7 +591,7 @@
     }
 
     .contato button p {
-        color: white; 
+        color: white;
     }
 
     /* Footer */
