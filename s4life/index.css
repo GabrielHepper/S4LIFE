@@ -16,7 +16,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 100;
     }
 
     .logo {
@@ -254,6 +253,7 @@
         color: yellow;
     }
 
+    /* Botão */
     .contato button {
         padding: 10px 40px;
         font-size: 18px;
