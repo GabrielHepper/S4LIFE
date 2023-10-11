@@ -101,10 +101,8 @@
     /* Produtos */
     .produtos {
         display: flex;
-        justify-content: space-around;
-        align-items: stretch;
         flex-wrap: wrap;
-        padding: 50px 20px 0 20px;
+        padding: 40px 20px 0 20px;
     }
 
 
@@ -129,9 +127,15 @@
         color: rgb(221, 181, 0);
     }
 
+    .geral {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
     .vitrine {
         width: 20vw;
-        max-height: 30vh;
+        max-height: 40vh;
         overflow: hidden;
         border: 1px solid rgb(154, 154, 154);
         border-radius: 10px;
@@ -288,6 +292,14 @@
         text-align: center;
     }
 
+    /* Contatos */
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 70px;
+    }
+
     /* Footer */
     footer {
         width: 100%;
@@ -396,8 +408,38 @@
         color: rgb(221, 181, 0);
     }
 
-    .menu {
-        display: none;
+    .menu a {
+        position: relative;
+        font-size: 5px;
+        font-weight: 500;
+        color: rgb(27, 27, 27);
+        text-decoration: none;
+    }
+
+    .menu a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: rgb(221, 181, 0);
+        transition: .2s;
+    }
+
+    .menu a:hover::before {
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    header nav ul li {
+        padding: 0 120px 0 0;
     }
 
     /* Sobre nós */
@@ -444,6 +486,7 @@
         justify-content: space-between;
         align-items: stretch;
         padding: 20px;
+        margin-bottom: 70px;
         margin-left: 35px;
         text-align: center;
     }
@@ -454,7 +497,7 @@
         align-items: center;
         text-align: center;
         flex-direction: column;
-        width: 100vw;
+        width: 75vw;
         margin-bottom: 5vh;
     }
 
@@ -480,6 +523,13 @@
         border-radius: 10px;
     }
 
+    .geral{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     .vitrine img {
         width: 100%;
         height: auto;
@@ -494,7 +544,7 @@
     /* Categoria */
     section.categoria {
         padding: 20px;
-        padding-bottom: 120px;
+        margin-bottom: 90px;
         text-align: center;
     }
 
@@ -503,7 +553,10 @@
         font-size: 30px;
     }
     .opcoes {
-        display: inline-flex;
+        display: flex;
+        align-items: center;
+        text-align: left;
+
     }
     .opcoes img {
         width: 140px;
@@ -523,6 +576,11 @@
     .opcoes p {
         font-size: 12px;
         display: inline;
+    }
+
+    .moradia{
+        display: flex;
+        flex-direction: column;
     }
     
     /* Perguntas */
@@ -594,12 +652,12 @@
         color: white;
     }
 
-    /* Footer */
     .contato {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        width: 73vw;
+        padding-top: 20px;
     }
 
     .contato h2 {
@@ -607,6 +665,41 @@
         font-size: 25px;
         text-align: center;
     }
+
+
+    .contato-baixo button {
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(255, 88, 88);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato-baixo .faca {
+        text-decoration: none;
+    }
+
+    .contato-baixo button:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .contato-baixo button p {
+        color: white;
+    }
+
+    .contato-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 89vw;
+        padding-top: 20px;
+    }
+    
 
     /* Footer */
     footer {
