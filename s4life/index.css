@@ -105,7 +105,6 @@
         padding: 40px 20px 0 20px;
     }
 
-
     .textop {
         display: flex;
         justify-content: center;
@@ -130,21 +129,23 @@
     .geral {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        gap: 5px;
     }
 
     .vitrine {
-        width: 20vw;
-        max-height: 40vh;
-        overflow: hidden;
-        border: 1px solid rgb(154, 154, 154);
-        border-radius: 10px;
-        margin: 0 0 40px 0;
+        width: 100%;
+        max-width: 350px;
+        margin: 10px 0;
         padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
     }
 
     .vitrine img {
         width: 100%;
+        border-radius: 10px;
         height: auto;
         object-fit: cover;
     }
@@ -159,7 +160,7 @@
 
     /* Categoria */
     section.categoria {
-        padding: 60px 7%;
+        padding: 5px 9%;
         padding-bottom: 120px;
     }
 
@@ -179,7 +180,7 @@
     }
 
     .opcoes img {
-        min-width: 100%; 
+        min-width: 100%;
         max-width: 100%;
         min-height: 100%;
         max-height: 100%;
@@ -278,18 +279,45 @@
         color: white;
     }
 
-    /* Contatos */
     .contato {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 70px;
+        width: 100vw;
+        padding-top: 5px;
     }
 
-    .contato h2 {
-        color: rgb(0, 0, 0);
-        font-size: 35px;
+    .contato-baixo button {
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(255, 88, 88);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
         text-align: center;
+    }
+
+    .contato-baixo .faca {
+        text-decoration: none;
+    }
+
+    .contato-baixo button:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .contato-baixo button p {
+        color: white;
+    }
+
+    .contato-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        padding-top: 40px;
     }
 
     /* Contatos */
@@ -348,6 +376,7 @@
     }
 
     .lista h3 {
+        color: rgb(221, 181, 0);
         letter-spacing: 1px;
     }
 
@@ -383,16 +412,12 @@
 
     /* Header */
     .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 100;
-        background-color: white;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
@@ -416,30 +441,25 @@
         text-decoration: none;
     }
 
-    .menu a::before {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 0;
-        height: 4px;
-        background: rgb(221, 181, 0);
-        transition: .2s;
-    }
-
-    .menu a:hover::before {
-        width: 100%;
-    }
-
-    header nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .menu ul {
         list-style: none;
+        display: flex;
     }
 
-    header nav ul li {
-        padding: 0 120px 0 0;
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 8px;
+        transition: color 0.3s;
+    }
+
+    .menu a:hover {
+        color: #007BFF;
     }
 
     /* Sobre nós */
@@ -465,18 +485,13 @@
     }
 
     .content h1 {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 800;
         margin-top: 80px;
     }
 
     .content p {
-        margin: 20px auto;
-        margin-left: 25%;
-        font-weight: 400;
-        line-height: 20px;
-        width: 60vw;
-        text-align: left;
+        font-size: 70%;
     }
 
     /* Produtos */
@@ -523,7 +538,7 @@
         border-radius: 10px;
     }
 
-    .geral{
+    .geral {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -552,12 +567,14 @@
         align-items: center;
         font-size: 30px;
     }
+
     .opcoes {
         display: flex;
         align-items: center;
         text-align: left;
 
     }
+
     .opcoes img {
         width: 140px;
         height: 130px;
@@ -578,11 +595,11 @@
         display: inline;
     }
 
-    .moradia{
+    .moradia {
         display: flex;
         flex-direction: column;
     }
-    
+
     /* Perguntas */
     section.faq {
         padding: 20px;
@@ -699,7 +716,7 @@
         width: 89vw;
         padding-top: 20px;
     }
-    
+
 
     /* Footer */
     footer {
@@ -750,9 +767,15 @@
         text-decoration: none;
     }
 
+    .lista h3 {
+        color: rgb(221, 181, 0);
+        letter-spacing: 1px;
+    }
+
     #resumo p {
         font-size: 12px;
         margin-bottom: 30px;
     }
+
 
 }
